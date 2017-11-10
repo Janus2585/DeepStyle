@@ -18,7 +18,7 @@ class Home extends React.Component {
 						<h1 id='introText'>Add an artistic flair to your photos</h1>
 					</div>
 					<div id = 'introPics'>
-						<SimpleSlider/>
+						
 					</div>
 					<div id="callToAction">
 						<div id='callToActionButtons'>

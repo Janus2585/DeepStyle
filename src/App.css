@@ -52,11 +52,6 @@
   margin: auto;
 }
 
-
-#contentContainer {
-  max-width: 1200px;
-  margin: auto;
-}
 #slider {
   padding-bottom: 30px;
   margin: auto;
@@ -110,10 +105,75 @@
 }
 
 #styleWrapper{
-  margin-top: 200px;
+  
 }
 .styleImage {
   max-width: 200px;
   max-height: 200px;
   margin: 30px 20px 30px 30px;
 }
+
+#introSection {
+  background-image:url('./img/starry_stanford_bigger.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+#introContainer {
+ 
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#howItWorksSection{
+  background-color: #d5e0e5;
+}
+
+#introText {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: middle;
+}
+
+#howToSteps{
+  width: 100%;
+}
+
+#howToStep {
+  margin: 10px 1% 10px 1%;
+  width: 31%;
+  float: left;
+}
+
+#howToStep img{
+  width: 100%;
+}
+
+#howToStep p {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#sampleDeepStyleImages{
+  width: 100%;
+}
+
+#sampleDeepStyleImage{
+  margin: 10px 1% 10px 1%;
+  width: 31%;
+  float: left;
+}
+
+#sampleDeepStyleImage img{
+  width: 100%;
+}
+
+#deepStyleYourPicSection {
+  background-color: #d5e0e5;
+}
+
