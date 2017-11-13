@@ -134,10 +134,17 @@
   background-color: #d5e0e5;
 }
 
+#introSection{
+
+}
 #introText {
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  vertical-align: middle;
+
+}
+
+#introText span{
+
 }
 
 #howToSteps{

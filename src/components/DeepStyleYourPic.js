@@ -8,6 +8,7 @@ import style3 from '../img/style3.jpg'
 */
 import borat from '../img/borat.jpg'
 
+
 export default class DeepStyleYourPic extends React.Component {
 	constructor() {
 		super();

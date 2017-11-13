@@ -36,7 +36,7 @@ var SampleDeepStyles = () => {
 					<div id='sampleDeepStyleImage'>
 						<img src={borat} alt='borat'/>
 					</div>
-					<button className='btn-primary btn-lg'>Create Your Own</button>
+					<button className='btn-primary btn-lg'>Create Your Own For Free</button>
 				</div>
 			</div>
 		</div>
