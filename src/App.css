@@ -188,3 +188,59 @@
   background-color: #d5e0e5;
 }
 
+/*image upload css*/
+
+.fileInput{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 10px 0px 10px 0px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.imgPreview{
+  text-align: center;
+  margin: auto;
+  height: 200px;
+  width: 350px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.imgPreview img {
+  width: 100%;
+  height: 100%;
+}
+
+
+  
+  
+.previewText{
+  width: 100%;
+  margin-top: 20px;
+}
+  
+.submitButton{
+  padding: 12px;
+  margin-left: 10px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 10pt;
+  cursor: pointer;
+  &:hover{
+    background: #efefef;
+  }
+}
+
+.centerText{
+  text-align: center;
+  width: 500px;
+}
+
+  

@@ -2,49 +2,30 @@ var express = require('express');
 var cors = require('cors');
 var request = require('request');
 var app = express();
+var fs = require('fs');
 
-app.use(cors())
-
-var options = {
-  url: 'https://api.deeparteffects.com/v1/noauth/styles',
-  headers: {
-    'Access-Control-Allow-Origin': '*',
-    'x-api-key': '49QmogELwMaJ61eUDhNwI66bAXJGRubZ6yimTgla'
-  }
-};
 
 /* app represents the express server */
 app.get('/', function(req, res, next) {
   //res.send('respond with a resource');
-  
-
-  request(options, function (error, response, body) {
-    //console.log('error:', error); // Print the error if one occurred
-    //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-    console.log('body:', body); // Print the HTML
-    res.send(body);
-  });
-  //res.send(sweg)
-
-  /*
-  got('https://api.deeparteffects.com/v1/noauth/styles')
-    .then(response => {
+  request.post({
+      url: 'https://api.deepai.org/api/neural-style',
+      formData: {
+      
+          content: fs.createReadStream('/path/to/your/file.jpg'),
+          
+      
+      },
+      headers: {
+          'Api-Key': '3e6667f2-71ed-4a25-bc54-cfe588abc386'
+      }
+  }, function callback(err, httpResponse, body) {
+      if (err) {
+          return console.error('request failed:', err);
+      }
+      var response = JSON.parse(body);
       console.log(response);
-    })
-    .catch(error => {
-        console.log(error.response.body);
-        //=> 'Internal server error ...' 
-    });
-  */
-  /*
-    res.json([{
-    	id: 1,
-    	username: "samsepi0l"
-    }, {
-    	id: 2,
-    	username: "D0loresH4ze"
-    }]);
-  */
+  });
 });
 
 

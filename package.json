@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "algorithmia": "^0.3.10",
     "axios": "^0.17.1",
+    "base64-img": "^1.0.3",
     "bootstrap": "^3.3.7",
     "cors": "^2.8.4",
     "flexbox": "0.0.3",
